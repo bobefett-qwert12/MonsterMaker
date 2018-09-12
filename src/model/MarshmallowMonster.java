@@ -74,7 +74,13 @@ public class MarshmallowMonster
 
 	public String toString()
 	{
-		String description = "My monster's name is " + name + ". He has " + legCount + " legs, " + eyeCount + " eyes, and " + armCount + " arms.";
-		return description;
+		String description1 = "My monster's name is " + name + ". He has " + legCount + " legs, " + eyeCount + " eyes, " + armCount + " arms, and ";
+		String description2;
+		if(hasNoses == true) {
+			description2 = "does have nose(s).";
+		}else {
+			description2 = "does not have a nose.";
+		}
+		return description1 + description2;
 	}
 }
